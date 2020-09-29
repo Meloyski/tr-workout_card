@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Container from "./Components/Container";
+import WorkoutCard from "./Components/WorkoutCard";
+import "./Style/style.scss";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container>
+        <WorkoutCard
+          zonetype="Sweetspot"
+          title="Carson"
+          hour="01"
+          min="00"
+          sec="00"
+          tss={80}
+          int={76}
+          cal={511}
+        />
+      </Container>
     </div>
   );
 }
